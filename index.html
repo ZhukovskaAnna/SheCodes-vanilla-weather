@@ -11,30 +11,49 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Hedvig+Letters+Serif:opsz@12..24&family=Open+Sans:wght@300&family=Raleway:wght@200;500;600&family=Roboto+Mono:wght@200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <div class="weather-app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city" required />
-          <input type="submit" placeholder="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            required
+            class="search-form-input"
+          />
+          <input
+            type="submit"
+            placeholder="Search"
+            class="search-form-button"
+          />
         </form>
       </header>
       <main>
-        <div>
-          <h1>Paris</h1>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">Paris</h1>
 
-          <p>
-            Tuesday 17:44, moderate rain
-            <br />
-            Humidity: 94%, Wind: 6.17km/h
-          </p>
+            <p class="weather-app-details">
+              Tuesday 17:44, moderate rain
+              <br />
+              Humidity: <strong>94%</strong>, Wind: <strong>6.17km/h</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">🌤</div>
+            <div class="weather-app-temperature">12</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
-        <div>☀️12°C</div>
       </main>
       <footer>
         Coded by
