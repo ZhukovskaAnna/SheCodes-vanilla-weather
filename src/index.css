@@ -79,6 +79,8 @@ main {
   justify-content: space-between;
 }
 .weather-forecast {
+  display: flex;
+  justify-content: space-between;
   margin-top: 20px;
   text-align: center;
 }
@@ -93,4 +95,5 @@ main {
 }
 .weather-forecast-temperatures {
   font-size: 13px;
+  color: #f65282;
 }
