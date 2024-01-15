@@ -57,10 +57,14 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function getForecast(city) {
+  let apiKey = "bd79ao40tde3dec118ca46bc3e6dd55f";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&${apiKey}&unit=metric`;
+  console.log(apiUrl);
+}
+
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
-
-searchCity("Lisbon");
 
 function displayForecast() {
   let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -80,4 +84,6 @@ function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = forecastHtml;
 }
+searchCity("Lisbon");
+getForecast("Lisbon");
 displayForecast();
