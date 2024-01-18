@@ -103,5 +103,6 @@ main {
 .weather-forecast-icon {
   margin-top: 10px;
   text-align: center;
-  font-size: 38px;
+  width: 88px;
+  height: 88px;
 }
